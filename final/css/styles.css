@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'My Font';
+    src: url('font/NanumGothicCoding-Regular.ttf') format('truetype');
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'My Font';
+    src: url('font/Roboto-Medium.ttf') format('truetype');
+    font-style:normal;
+    unicode-range: U+0020-007E;
+}
+
+body {
+    font-family: 'My Font', sans-serif;
+    height: 100vh;
+}
+#header {
+    width: 84.7vw;
+    margin-top: 4vh;
+    text-align: right;
+    position: fixed;
+}
+.logout {
+    background: none;
+    border-radius: 6px;
+}
+#logout:hover {
+    background: none;
+    border-radius: 6px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.login-form {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#login-form > h2 {
+    font-size:40px;
+    font-weight: 600;
+    margin: 0;
+}
+#login-form > h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 35px 0 20px 0;
+}
+
+.input{
+    outline: none;
+    border:none;
+    border-bottom: 4px solid black;
+    background: none;
+    opacity: 0.2;
+}
+.input:focus {
+    opacity: 1;
+}
+.box {
+    height: 80vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+
+
+
+#leftBox {
+    width:17vw;
+    align-items: flex-start;
+}
+#leftBox > iframe {
+    margin: 10px;
+    align-self: center;
+}
+#music-content {
+    margin: 0 0 0 10px;
+}
+#title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+#artist {
+    font-size: 15px;
+    margin: 0;
+}
+#music-list {
+    list-style: none;
+    margin-top: 20vh;
+    padding:0;
+    font-size: 13px;
+}
+#music-list > h4 {
+    margin: 0 0 10px 0;
+}
+.music__btn {
+    margin-bottom: 4px;
+    padding: 0;
+    border:none;
+    background: none;
+    color:inherit;
+    font-size: 12px;
+    font-weight: 600;
+}
+.music__btn:hover {
+    cursor: pointer;
+}
+
+#centerBox {
+    width:35vw;
+    margin : 0 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.wrapper__greeting {
+    margin: 20px 0px 40px 40px;
+}
+
+.wrapper__todo {
+    width:100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.check__button {
+    border:none;
+    background: none;
+}
+.todo-form__input {
+    width : 27vw;
+}
+.todo-form__input:focus::placeholder {
+    color:transparent;
+}
+#todo-list {
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px 8px 10px 8px;
+    width:30vw;
+    height: 100%;
+    list-style: none;
+}
+#todo-list > li {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;;
+}
+.todo__button {
+    border:none;
+    background: none;
+}
+.todo__button:hover {
+cursor: pointer;
+}
+
+#rightBox {
+    width:17vw;
+    display:flex;
+    justify-content: space-between;
+}
+#clock__wrapper{
+    background-color: rgba(255,255,255,0.6);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+#clock {
+    margin: 0;
+}
+#weather {
+    margin-bottom: 10px;
+}
+
+
+.hidden {
+    display:none;
+}
