@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="login__wrapper">
+        <form id="login-form" class="login-form">
+            <h2>Welcome!</h2>
+            <h3>Input Your Name</h3>
+            <input type="text" class="input"/>
+        </form>
+    </div>
+    <div id="header">
+        <button id="logout" class="logout">logout</button>
+    </div>
+    <div id="main" class="main">
+        <div id="leftBox" class="box">
+            <iframe width="90%" height="250px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="music-content">
+                <h2 id="title"></h2>
+                <h2 id="artist"></h2>
+                <ul id="music-list">
+                    <h4>Play List</h4>
+                    <li><button id="square" class="music__btn">square</button></li>
+                    <li><button id="이럴거면 그러지말지" class="music__btn">이럴거면 그러지말지</button></li>
+                    <li><button id="Rain" class="music__btn">Rain</button></li>
+                    <li><button id="To Myself" class="music__btn">To Myself</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="centerBox" class="box">
+            <div class="wrapper wrapper__greeting">
+                <h2>Have a good day :)</h2>
+                <span id="greeting"></span>
+                
+            </div>
+            <div class="wrapper wrapper__todo">
+                <form id="todo-form">
+                    <input type="text" class="input todo-form__input" placeholder="Write a To Do and Press Enter" required>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+        <div id="rightBox" class="box">
+            <div id="clock__wrapper">
+                <h2 id="clock">00:00</h2>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/themacolor.js"></script>
+    <script src="js/music.js"></script>
+    <script src="https://kit.fontawesome.com/76e52028a2.js" crossorigin="anonymous"></script>
+</body>
+</html>
